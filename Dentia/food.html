@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Product Search</title>
+    <link rel="stylesheet" href="food.css" />
+    <script src="food.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Food Lookup</div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="#">Explore</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Search Box -->
+        <div class="card">
+            <h2>Search the item</h2>
+            <form id="searchForm">
+                <div class="form-group">
+                    <input type="text" id="keywordInput" placeholder="e.g. chocolate, cokkies, pasta..">
+                </div>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <!-- Static Default Cards -->
+        <div class="cards-grid" id="staticCards">
+            <div class="card">
+                <img src="/Asset/maggie.jpg" alt="Maggie">
+                <h3>Maggie 2 min Masala Noodles</h3>
+                <p><strong>Brand:</strong> Maggie</p>
+                <p><strong>Quantity:</strong> 240g</p>
+                <p><strong>Categories:</strong> Spicy seasonings with veggies</p>
+            </div>
+            <div class="card">
+                <img src="/Asset/Cornetto.avif" alt="Cornetto">
+                <h3>Kwality Wall's Cornetto</h3>
+                <p><strong>Brand:</strong> Cornetto</p>
+                <p><strong>Quantity:</strong> 1 pc</p>
+                <p><strong>Categories:</strong> Milk, Soy, and Wheat. May contain: Nuts</p>
+            </div>
+            <div class="card">
+                <img src="/Asset/cadbury.jpg" alt="Dairy Milk">
+                <h3>Dairy Milk</h3>
+                <p><strong>Brand:</strong> Cadbury</p>
+                <p><strong>Quantity:</strong> 110g</p>
+                <p><strong>Categories:</strong> Chocolate, Milk chocolate</p>
+            </div>
+        </div>
+
+        <!-- Dynamic Search Results -->
+        <div class="cards-grid" id="result"></div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Appointment</title>
+  <link rel="stylesheet" href="appointment.css" />
+</head>
+
+<body>
+
+
+  <section class="appointment-hero">
+    <h1>Book Appointment</h1>
+    <hr />
+    <a href="index.html" class="home">Home</a>
+  </section>
+
+
+  <section class="appointment-section">
+    <div class="appointment-form">
+      <h3>📧 Book Your Appointment</h3>
+      <p>Book your appointment today for expert dental care tailored to your needs. Healthy, beautiful smiles start with
+        a simple step—schedule now!</p>
+      <form>
+        <select required>
+          <option value="">Select Service</option>
+          <option value="cleaning">Teeth Cleaning</option>
+          <option value="whitening">Whitening</option>
+          <option value="braces">Braces Consultation</option>
+        </select>
+
+        <div class="row">
+          <input type="date" required />
+          <select required>
+            <option value="">Select Time</option>
+            <option value="9am">09:00 AM</option>
+            <option value="10am">10:00 AM</option>
+            <option value="11am">11:00 AM</option>
+            <option value="1pm">01:00 PM</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="tel" placeholder="Phone" required />
+        </div>
+
+        <textarea rows="3" placeholder="Message (optional)"></textarea>
+
+        <button type="submit">Send Appointment</button>
+      </form>
+    </div>
+
+    <div class="appointment-image">
+      <img src="/Asset/ap.jpg" alt="Dentist with child" />
+      <div class="overlay">
+        <p><strong>⏰ Opening Hours</strong><br />Mon to Sat 08:00 – 20:00</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
